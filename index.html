@@ -3,37 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <title>Question UI</title>
-
 <style>
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111;
-    font-family: Arial;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 .container {
     text-align: center;
-    color: white;
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.buttons {
+    position: relative;
+    height: 120px;
 }
 
 button {
-    padding: 12px 25px;
-    font-size: 18px;
+    padding: 14px 30px;
+    font-size: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
 }
 
 #yesBtn {
-    background: #00ff9c;
+    background: linear-gradient(135deg, #00f260, #0575e6);
+    color: white;
     margin-right: 20px;
 }
 
 #noBtn {
-    background: #ff4d4d;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
     position: absolute;
 }
 </style>
@@ -42,10 +61,10 @@ button {
 <body>
 
 <div class="container">
-    <h1>Would you like to my valentine? 💖</h1>
-
-    <button id="yesBtn">Yes</button>
-    <button id="noBtn">No</button>
+    <h1>I know I'm not perfect , but I know with you by my side anything is possible</h1>
+    <h1> Would you like to my Valentine? 💖</h1>
+    <button id="yesBtn">Yes 🐶💖</button>
+    <button id="noBtn">No 😿💔</button>
 </div>
 
 <script>
@@ -66,3 +85,4 @@ document.getElementById("yesBtn").onclick = () => {
 
 </body>
 </html>
+

@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Yay ❤️</title>
+
 <style>
 body {
     background: #000;
@@ -12,19 +13,52 @@ body {
     height: 100vh;
     color: white;
 }
+
 img {
     max-width: 80%;
     border-radius: 20px;
+    margin: 15px;
+    display: none;   /* Hidden initially */
+}
+
+h1 {
+    display: none;   /* Hidden initially */
 }
 </style>
+
 </head>
 
 <body>
 
-<h1>7 Crore!!!!!!!!!!!!!</h1>
+<img id="img1" src="selection.jpeg" alt="Selection Image">
+<h1>Hurrayyyyyy!!</h1>
+<h1 id="text">7 Crore!!!!!!!!!!!!!</h1>
 
-<img src="P_image.jpeg" alt="Your Image">
+<img id="img2" src="P_image.jpeg" alt="Final Image">
+
+<script>
+
+// Timing (milliseconds)
+const firstDelay = 1000;   // Show first image after 1 sec
+const secondDelay = 2000; // Show text after 2 sec
+const thirdDelay = 3000;  // Show second image after 3 sec
+
+// Show first image
+setTimeout(() => {
+    document.getElementById("img1").style.display = "block";
+}, firstDelay);
+
+// Show text
+setTimeout(() => {
+    document.getElementById("text").style.display = "block";
+}, secondDelay);
+
+// Show final image
+setTimeout(() => {
+    document.getElementById("img2").style.display = "block";
+}, thirdDelay);
+
+</script>
 
 </body>
 </html>
-
